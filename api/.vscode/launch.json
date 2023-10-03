@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Dev",
+            "type": "dart",
+            "request": "launch",
+            "program": "bin/chat.dart",
+            "toolArgs": [
+                "--define=POSTGRES_URL=postgres://postgres:postgres@localhost:5432/postgres?schema=chat",
+                "--define=JWT_SECRET=verysecret",
+            ],
+        }
+    ]
+}
